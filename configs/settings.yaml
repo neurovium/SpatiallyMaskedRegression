@@ -1,0 +1,66 @@
+# ============================================================================
+# SMR experiment configuration
+# ============================================================================
+#
+# This file is loaded by ``fixed/setting.py::Settings.load_settings``. All
+# keys must match a property on the ``Settings`` class; unknown keys are
+# rejected.
+
+# ---- Dataset / mode --------------------------------------------------------
+# dataset_type:
+#   'EEG' / 'iEEG'                           -- real recordings
+#   'Surrogate_EEG' / 'Surrogate_iEEG'       -- phase-shuffled surrogates
+#   'IAAFT_EEG'     / 'IAAFT_iEEG'           -- IAAFT surrogates
+#   'Block_EEG'     / 'Block_iEEG'           -- block-shuffled surrogates
+dataset_type: 'EEG'
+
+# mode: 'train', 'test_new', 'compare', 'Evaluate_dandiset'.
+mode: 'train'
+
+# Number of subjects in the experiment.
+#   iEEG (AJILE12): 12     EEG (Upper Limb Movements): 15
+num_subject: 15
+
+# Sampling frequency in Hz.
+fs: 500
+
+# Subject indices used at run time. The driver in ``fixed/main.py``
+# overrides ``train_subject`` and ``mask_intensity`` for the full sweep,
+# but values must still parse from this file.
+train_subject: 0
+test_subject: 0
+
+# ---- Training --------------------------------------------------------------
+max_epoch: 10000
+batch_size: 32
+lr: 0.01
+patience: 200
+mask_intensity: 0.0      # overwritten by main.py during the sweep
+
+# ---- Neighborhood definition ----------------------------------------------
+# neighborhood_method:
+#   'atlas'  -- 10-10/10-5 groups (EEG) or AAL labels (iEEG)
+#               (manuscript-matching, recommended default)
+#   'knn'    -- k nearest electrodes by 2-D projected Euclidean distance
+neighborhood_method: 'atlas'
+
+# Number of nearest neighbors when neighborhood_method == 'knn'.
+neighborhood_k: 9
+
+# ---- Model selection ------------------------------------------------------
+# model_type: 'instantaneous' (ReconModel) or 'lagged' (LaggedReconModelConfigurable)
+model_type: 'instantaneous'
+
+# Lag set in milliseconds used when model_type == 'lagged'. The
+# instantaneous (lag-0) branch is always present in the lagged model.
+lags_ms: [20, 30, 50, 60]
+
+# If true, ``fixed/main.py`` runs each (subject, mask intensity) cell
+# twice -- once with model_type='instantaneous' and once with 'lagged'.
+run_lagged_too: false
+
+# ---- Cross-subject evaluation --------------------------------------------
+# Directory of donor checkpoints used by ``evaluate_model`` in
+# mode='test_new'. Leave blank to fall back to
+# ``donor_models_dir`` from configs/device_path.yaml.
+path_save_model: ''

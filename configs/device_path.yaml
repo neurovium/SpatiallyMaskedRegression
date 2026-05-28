@@ -1,0 +1,9 @@
+# Placeholder. Copy ``device_path.example.yaml`` over this file (or edit
+# this one directly) and replace the placeholders with paths on your own
+# machine before running the pipeline.
+
+data_dir: '/path/to/SMR_data'
+preprocessed_dir: ''
+raw_dir: ''
+results_dir: '/path/to/SMR_results'
+donor_models_dir: ''

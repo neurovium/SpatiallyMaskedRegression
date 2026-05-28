@@ -1,0 +1,51 @@
+# ============================================================================
+# Local filesystem paths
+# ============================================================================
+#
+# Copy this file to ``configs/device_path.yaml`` and edit the entries to
+# point at the directories on your machine. All paths can be absolute or
+# relative to the ``fixed/`` package root.
+#
+# The keys are consumed by ``fixed/path.py::Paths.load_device_paths``.
+#
+# Typical layout the rest of the package expects underneath these
+# directories:
+#
+#   <preprocessed_dir>/
+#       EEG/
+#           S1.pkl, S2.pkl, ...                  per-subject EEG trials
+#       iEEG/
+#           patient_1_reformat.pkl, ...          per-subject iEEG trials
+#
+#   <raw_dir>/
+#       EEG/
+#           ch_name_eeg.npy                      EEG channel names (10-10)
+#           coordinate_eeg.npy                   EEG electrode coordinates
+#       iEEG/
+#           ch_names.pkl                         iEEG AAL labels per subject
+#           elec_coor_all_move_rest.pkl          iEEG coordinates per subject
+#
+#   <results_dir>/
+#       (created by the pipeline; no fixed sub-layout needed)
+#
+#   <donor_models_dir>/
+#       sub_<i>/Regu/intesity_100/best_model/*.pt
+#       sub_<i>/Regu2/intesity_100/adj_mat_<i>.npy
+#       (output of an earlier intra-subject training run, used as the
+#        donor source for cross-subject evaluation)
+
+# Root data directory. The defaults below are derived from this if you
+# leave preprocessed_dir / raw_dir blank.
+data_dir: '/path/to/SMR_data'
+
+# Optional explicit overrides. If left blank or omitted, they default to
+# '<data_dir>/preprocessed' and '<data_dir>/raw' respectively.
+preprocessed_dir: ''
+raw_dir: ''
+
+# Where all training and CBEM artifacts are written.
+results_dir: '/path/to/SMR_results'
+
+# Optional separate location for donor checkpoints used by
+# evaluate_model. If blank, falls back to results_dir.
+donor_models_dir: ''
