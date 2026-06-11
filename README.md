@@ -4,6 +4,9 @@ This directory is the self-contained code accompanying:
 
 **Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings**
 Maryam Ostadsharif Memar and Nima Dehghani.
+[![arXiv](https://shields.io)](https://arxiv.org/abs/2606.11415)
+[![PDF](https://shields.io)](https://arxiv.org/pdf/2606.11415)
+[![HTML](https://shields.io)](https://arxiv.org/html/2606.11415v1)
 
 ## What's in here
 
@@ -196,5 +199,13 @@ python test_model_factory.py
 * Upper Limb Movements EEG: <https://bnci-horizon-2020.eu/database/data-sets>
 
 ## Citation
-
+  @article{memarDehghani2026spatiallymaskedregressionreveals,
+        title={Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings}, 
+        author={Maryam Ostadsharif Memar and Nima Dehghani},
+        year={2026},
+        eprint={2606.11415},
+        archivePrefix={arXiv},
+        primaryClass={q-bio.NC},
+        url={https://arxiv.org/abs/2606.11415}, 
+  }
 If you use this code, please cite the accompanying paper.
