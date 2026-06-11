@@ -211,3 +211,8 @@ BIBTEX:
         primaryClass={q-bio.NC},
         url={https://arxiv.org/abs/2606.11415}, 
   }
+
+[![Paper Card](https://img.shields.io/badge/Paper%20Card-Neurovium-6f42c1)](https://neurovium.science/papers/SMR-local-global/)
+
+[![Blog Post](https://img.shields.io/badge/Blog%20Post-Neurovium-0a7cff)](https://neurovium.science/posts/pblog-SMR-local-global/)
+
