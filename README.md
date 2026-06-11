@@ -3,7 +3,9 @@
 This directory is the self-contained code accompanying:
 
 **Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings**
+
 Maryam Ostadsharif Memar and Nima Dehghani.
+
 [![arXiv](https://img.shields.io/badge/arXiv-2606.11415-b31b1b.svg)](https://arxiv.org/abs/2606.11415)
 [![PDF](https://img.shields.io/badge/PDF-2606.11415-blue.svg)](https://arxiv.org/pdf/2606.11415)
 [![HTML](https://img.shields.io/badge/HTML-2606.11415-green.svg)](https://arxiv.org/html/2606.11415v1)
