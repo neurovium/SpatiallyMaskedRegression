@@ -203,7 +203,7 @@ python test_model_factory.py
 ## Citation
 If you use this code, please cite the accompanying paper:
 
-BIBTEX:
+```bibtex
   @article{memarDehghani2026spatiallymaskedregressionreveals,
         title={Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings}, 
         author={Maryam Ostadsharif Memar and Nima Dehghani},
@@ -213,6 +213,7 @@ BIBTEX:
         primaryClass={q-bio.NC},
         url={https://arxiv.org/abs/2606.11415}, 
   }
+```
 
 [![Paper Card](https://img.shields.io/badge/Paper%20Card-Neurovium-6f42c1)](https://neurovium.science/papers/SMR-local-global/)
 
