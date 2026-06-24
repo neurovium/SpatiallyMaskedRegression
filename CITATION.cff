@@ -8,6 +8,8 @@ abstract: >-
 type: software
 
 authors:
+  - family-names: Ostadsharif Memar
+    given-names: Maryam
   - family-names: Dehghani
     given-names: Nima
     email: nima.dehghani@mit.edu
@@ -46,3 +48,4 @@ preferred-citation:
     - type: doi
       value: "10.48550/arXiv.2606.11415"
   url: "https://arxiv.org/abs/2606.11415"
+Ostadsharif Memar
