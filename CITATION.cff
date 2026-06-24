@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper below."
+title: "SMR (Spatially Masked Regression) for Local and Distributed Predictability in Neural Recordings"
+abstract: >-
+  A software suite for  “Spatially Masked Regression” (SMR) as a reconstruction-based
+  framework for separating local redundancy from distributed predictability in 
+  electrophysiological recordings.
+type: software
+
+authors:
+  - family-names: Dehghani
+    given-names: Nima
+    email: nima.dehghani@mit.edu
+    orcid: "https://orcid.org/0000-0003-2032-8903"
+
+version: "1.0.0"
+date-released: "2026-06-11"
+doi: "10.5281/zenodo.20834377"
+license: MIT
+
+repository-code: "https://github.com/neurovium/SpatiallyMaskedRegression/"
+url: "https://neurovium.science/papers/SMR-local-global/"
+
+keywords:
+  - Predictive Embedding
+  - Neural Signal Reconstruction
+  - Multichannel Arrays
+  - Functional Connectivity
+  - Pariwise Interaction
+  - network structure
+
+preferred-citation:
+  type: article
+  title: "Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recording"
+  authors:
+    - family-names: Ostadsharif Memar
+      given-names: Maryam
+    - family-names: Dehghani
+      given-names: Nima
+      email: nima.dehghani@mit.edu
+  year: 2026
+  journal: "arXiv"
+  identifiers:
+    - type: other
+      value: "arXiv:2606.11415"
+    - type: doi
+      value: "10.48550/arXiv.2606.11415"
+  url: "https://arxiv.org/abs/2606.11415"
