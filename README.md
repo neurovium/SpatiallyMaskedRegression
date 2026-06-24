@@ -1,11 +1,12 @@
-# Spatially Masked Regression — code release
+# SMR — Spatially Masked Regression for Neural Signal Reconstruction
+[![DOI](https://zenodo.org/badge/DOI/10.5281%2Fzenodo.20834377.svg)](https://doi.org/10.5281/zenodo.20834377)
+[![Paper Card](https://img.shields.io/badge/Paper%20Card-Neurovium-6f42c1)](https://neurovium.science/papers/SMR-local-global/)
+[![Blog Post](https://img.shields.io/badge/Blog%20Post-Neurovium-0a7cff)](https://neurovium.science/posts/pblog-SMR-local-global/)
 
-This directory is the self-contained code accompanying:
+Companion code for the paper:
 
-**Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings**
-
-Maryam Ostadsharif Memar and Nima Dehghani.
-
+> **Spatially Masked Regression Reveals Local and Distributed Predictability in Electrophysiological Recordings**
+> Maryam Ostadsharif Memar and Nima Dehghani. 2026.
 [![arXiv](https://img.shields.io/badge/arXiv-2606.11415-b31b1b.svg)](https://arxiv.org/abs/2606.11415)
 [![PDF](https://img.shields.io/badge/PDF-2606.11415-blue.svg)](https://arxiv.org/pdf/2606.11415)
 [![HTML](https://img.shields.io/badge/HTML-2606.11415-green.svg)](https://arxiv.org/html/2606.11415v1)
@@ -200,8 +201,21 @@ python test_model_factory.py
 * AJILE12 iEEG: <https://dandiarchive.org/dandiset/000055/0.220127.0436>
 * Upper Limb Movements EEG: <https://bnci-horizon-2020.eu/database/data-sets>
 
+---
+
 ## Citation
-If you use this code, please cite the accompanying paper:
+
+If you use this code, please cite **both the software and the paper**. The
+repository ships a [`CITATION.cff`](CITATION.cff), so GitHub's *"Cite this
+repository"* button and citation managers (Zenodo, Papers, etc.) can export the
+reference automatically.
+
+**The software:**
+
+> Ostad Sharif, Maryam; Dehghani, Nima. *SMR — Spatially Masked Regression for Neural Signal Reconstruction*
+> 2026. https://doi.org/10.5281/zenodo.20834377
+
+**The paper**:
 
 ```bibtex
   @article{memarDehghani2026spatiallymaskedregressionreveals,
@@ -218,4 +232,9 @@ If you use this code, please cite the accompanying paper:
 [![Paper Card](https://img.shields.io/badge/Paper%20Card-Neurovium-6f42c1)](https://neurovium.science/papers/SMR-local-global/)
 
 [![Blog Post](https://img.shields.io/badge/Blog%20Post-Neurovium-0a7cff)](https://neurovium.science/posts/pblog-SMR-local-global/)
+
+
+
+
+
 
